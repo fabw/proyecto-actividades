@@ -1,0 +1,16 @@
+body {
+  background-color: lightblue;
+}
+
+/* Lección 3, Ejercicio 3: títulos en rojo */
+h1, h2, h3, h4, h5, h6 {
+  color: red;
+}
+
+/* Lección 3, Ejercicio 4: imagen 400x300, centrada y con margen automático */
+img {
+  width: 400px;
+  height: 300px;
+  display: block;
+  margin: 0 auto;
+}
