@@ -1,44 +1,52 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Artículo informativo con imagen</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sitio con Bootstrap</title>
 
-  <!-- Enlace a la hoja de estilos usando ruta local -->
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <!-- Bootstrap por CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS para el fondo lightblue -->
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
-<body>
-  <header>
-    <h1>La importancia de la hidratación diaria</h1>
-    <p>
-      Mantenerse hidratado es clave para el rendimiento físico y mental. El agua participa en procesos
-      como la regulación de la temperatura corporal y el transporte de nutrientes.
-    </p>
-  </header>
+<body class="bg-lightblue">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Mi Sitio</a>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Enlace 1</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Enlace 2</a></li>
+      </ul>
+    </div>
+  </nav>
 
-  <section>
-    <p>
-      Una hidratación adecuada ayuda a reducir la fatiga, mejora la concentración y favorece la recuperación
-      después de la actividad física. No esperes a tener sed: la sed suele aparecer cuando ya existe cierto
-      grado de deshidratación.
-    </p>
+  <main class="container py-4">
+    <!-- Sección destacada (Hero) -->
+    <section class="p-4 mb-3 bg-white rounded">
+      <h1 class="text-danger">Hidratación diaria</h1>
+      <p>Beber agua mejora la salud y el rendimiento diario.</p>
+    </section>
 
-    <!-- Imagen de apoyo cargada desde ruta local -->
-    <img
-      src="assets/img/apoyo.jpg"
-      alt="Vaso de agua como apoyo visual del texto sobre hidratación"
-    />
+    <!-- Imagen centrada editada en photoshop para un tamaño de 400x300 -->
+    <img src="assets/img/apoyo.jpg" alt="Imagen de apoyo">
 
-    <p>
-      Como recomendación general, acompaña tus comidas con agua y aumenta la ingesta si hace calor o si realizas
-      ejercicio. Observa señales como el color de la orina: tonos muy oscuros pueden indicar falta de hidratación.
-    </p>
-  </section>
+    <!-- Botón -->
+    <div class="text-center my-3">
+      <button class="btn btn-primary">Acción</button>
+    </div>
 
-  <footer>
-    <p>© 2026 - Página de práctica (Lección 2)</p>
-  </footer>
+    <!-- Alerta -->
+    <div class="alert alert-info">
+      Sitio cargado con Bootstrap.
+    </div>
+
+    <footer class="py-3">
+      <p>© 2026</p>
+    </footer>
+  </main>
 </body>
 </html>
